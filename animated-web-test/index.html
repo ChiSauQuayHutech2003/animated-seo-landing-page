@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animated-web-test</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <script type="module" src="/src/main.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#F7F5F0',
+                        creamDark: '#EDE8DF',
+                        brandGreen: '#10B981',
+                        brandGreenHover: '#059669',
+                        brandDark: '#111827',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app"></div>
+    <section class="hero">
+        <div class="hero-visual-bg robot-frame" data-robot-frame="hero"></div>
+        <div class="hero-bottom-cut"></div>
+        <header class="header">
+            <div class="header-container">
+                <a class="logo">
+                    <img src="./public/images/Logo.svg" alt="Sark Logo">
+                </a>
+                <nav class="nav">
+                    <a href="#">Demos</a>
+                    <a href="#">About</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Pages</a>
+                    <a href="#">Contact</a>
+                </nav>
+                <div class="header-actions">
+                    <a href="#" class="login">Login</a>
+                    <a href="#" class="header-button">
+                        Get Started Free
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="site-container hero-inner">
+            <div class="hero-content">
+                <h1>
+                    The right SEO to<br>
+                    boost <span>your rankings</span>
+                </h1>
+                <p>
+                    Search engine optimization is an ever-changing practice dictated
+                    by updates in algorithms & technological innovation.
+                    Get discovered by the right SEO agency.
+                </p>
+                <a href="#" class="hero-button">
+                    Get Started Free
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="customers">
+                    <div class="avatar">👤</div>
+                    <div>
+                        <strong>38,482</strong>
+                        <small>Happy Customers</small>
+                    </div>
+                </div>
+                <div class="rating">
+                    <strong>4.8/5</strong>
+                    <div class="stars">★★★★☆</div>
+                    <small>Rating</small>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BRAND LOGOS -->
+    <section class="brand-logos">
+        <div class="site-container">
+
+            <div class="row align-items-center brand-row">
+
+                <!-- Text -->
+                <div class="col-12 col-lg-3 text-center text-lg-start">
+                    <p class="brand-trust-text mb-0">
+                        1000+ Big brands trust us
+                    </p>
+                </div>
+
+                <!-- Logos -->
+                <div class="col-12 col-lg-9">
+
+                    <div class="brand-list">
+
+                        <div class="brand-logo">
+                            <img
+                                src="/images/Microsoft Logo.svg"
+                                alt="Microsoft"
+                            >
+                        </div>
+
+                        <div class="brand-logo">
+                            <img
+                                src="/images/Airbnb Logo.svg"
+                                alt="Airbnb"
+                            >
+                        </div>
+
+                        <div class="brand-logo">
+                            <img
+                                src="/images/OLA logo.svg"
+                                alt="OLA"
+                            >
+                        </div>
+
+                        <div class="brand-logo">
+                            <img
+                                src="/images/Walmart Logo.svg"
+                                alt="Walmart"
+                            >
+                        </div>
+
+                        <div class="brand-logo">
+                            <img
+                                src="/images/Google Logo.svg"
+                                alt="Google"
+                            >
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4"> 
+            <div class="site-container">
+                <div class="features-heading text-center">
+                    <h2 class="features-label">
+                        Awesome features
+                    </h2>
+                    <h3 class="features-title">
+                        optimizing your website
+                    </h3>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 pt-5 feature-list">
+                    <div class="col feature-item text-center px-4">
+                        <div class="feature-image mb-3">
+                            <img src="./public/images/tamgiac.svg" alt="SEO Project">
+                        </div>
+                        <h4>Initial SEO Project</h4>
+                        <p>
+                        SEO is an ever-changing practice dictated by updates
+                        in SEO algorithms and technological innovation.
+                        </p>
+                    </div>
+                    <div class="col feature-item text-center px-4">
+                        <div class="feature-image mb-3">
+                            <img src="./public/images/cloud.svg" alt="SEO Audit">
+                        </div>
+                        <h4>SEO Audit &amp; Strategy</h4>
+                        <p>
+                        Campaigns are tracked and data is leveraged throughout
+                        every campaign, ensuring our clients are one step.
+                        </p>
+                    </div>
+                    <div class="col feature-item text-center px-4">
+                        <div class="feature-image mb-3">
+                            <img src="./public/images/setting.svg" alt="Local SEO">
+                        </div>
+                        <h4>Local SEO Project</h4>
+                        <p>
+                        This is the process of getting other websites to link
+                        back to a website. Links are a signal to Google
+                        that a website.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- VIDEO / SEO VISIBILITY SECTION -->
+    <section class="video-section">
+        <div class="site-container">
+
+            <div class="row align-items-center video-row">
+
+                <!-- LEFT -->
+                <div class="col-12 col-lg-6">
+                    <div class="video-frame" data-robot-frame="video">
+
+                        <button
+                            type="button"
+                            class="video-play-btn"
+                            aria-label="Play video"
+                        >
+                            ▶
+                        </button>
+
+                    </div>
+                </div>
+
+
+                <!-- RIGHT -->
+                <div class="col-12 col-lg-6">
+                    <div class="video-content">
+
+                        <h2 class="video-title">
+                            We favor increasing the
+                            <span class="video-highlight">
+                                visibility of the website
+                            </span>
+                        </h2>
+
+                        <p class="video-description">
+                            At its core, the meaning of search engine optimization (SEO)
+                            is increasing your website's visibility in the results of major
+                            search engines &amp; users and your customers want or need.
+                        </p>
+
+
+                        <!-- STATS -->
+                        <div class="row video-stats">
+
+                            <div class="col-6">
+                                <div class="video-stat">
+                                    <strong>70k+</strong>
+                                    <span>SEO Projects completed</span>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="video-stat">
+                                    <strong>156+</strong>
+                                    <span>Satisfied Customers</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. Services Grid -->
+    
+    <section class="services-section py-5">
+        <div class="site-container">
+
+            <!-- Tiêu đề -->
+            <div class="text-center services-heading mx-auto mb-5">
+                <p class="services-label mb-1">
+                    Qualities &amp; customizable
+                </p>
+                <h2 class="services-title ">
+                    ideal SEO services
+                </h2>
+            </div>
+
+            <!-- Danh sách dịch vụ -->
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 services-grid">
+
+                <div class="col service-item">
+                    <h3>Target Analysis</h3>
+                    <p>
+                    Target analysis is an examination of potential
+                    targets to determine military importance.
+                    </p>
+                    <a href="#learn-more">Discover More <span>→</span></a>
+                </div>
+
+                <div class="col service-item">
+                    <h3>Content Optimization</h3>
+                    <p>
+                    Content optimization is the process of making
+                    sure content is written in a way that it can reach.
+                    </p>
+                    <a href="#learn-more">Discover More <span>→</span></a>
+                </div>
+
+                <div class="col service-item">
+                    <h3>Keyword Research</h3>
+                    <p>
+                    Keyword research is the process by which you
+                    research popular search engines like Google.
+                    </p>
+                    <a href="#learn-more">Discover More <span>→</span></a>
+                </div>
+
+                <div class="col service-item">
+                    <h3>Continuous Testing</h3>
+                    <p>
+                    Continuous Testing is the process of executing
+                    automated tests as part of the software delivery.
+                    </p>
+                    <a href="#learn-more">Discover More <span>→</span></a>
+                </div>
+
+                <div class="col service-item">
+                    <h3>E-Commerce SEO</h3>
+                    <p>
+                    Ecommerce SEO is the process of making your
+                    online store more visible in the search engine.
+                    </p>
+                    <a href="#learn-more">Discover More <span>→</span></a>
+                </div>
+
+                <div class="col service-item">
+                    <h3>Website Migrations</h3>
+                    <p>
+                    A site migration is a term broadly used by SEO
+                    professionals to describe any event website.
+                    </p>
+                    <a href="#learn-more">Discover More <span>→</span></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="team-section py-5">
+        <div class="site-container">
+            <div class="row align-items-start gy-4 team-header">
+                <div class="col-12 col-lg-6">
+                    <h2 class="team-title">
+                        <span class="team-highlight">
+                            Meet our amazing SEO
+                        </span>
+                        <br>
+                        team for your business
+                    </h2>
+                </div>
+
+                <!-- Description bên phải -->
+                <div class="col-12 col-lg-5 offset-lg-1">
+                    <p class="team-description mb-0">
+                        Our SEO team will take the time to truly understand your
+                        business, your goals, and your mission. We recognize that
+                        your needs are unique, and that’s what inspires our team.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- ===================== -->
+            <!-- TEAM MEMBERS -->
+            <!-- ===================== -->
+
+            <div class="row text-center gy-5 team-members">
+
+                <!-- Member 1 -->
+                <div class="col-12 col-md-4">
+
+                    <div class="team-member">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=80"
+                            alt="Esther Howard"
+                            class="team-image"
+                        >
+
+                        <h3 class="team-name">
+                            Esther Howard
+                        </h3>
+
+                        <p class="team-position">
+                            Senior SEO Manager
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Member 2 -->
+                <div class="col-12 col-md-4">
+
+                    <div class="team-member">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=80"
+                            alt="Leslie Alexander"
+                            class="team-image"
+                        >
+
+                        <h3 class="team-name">
+                            Leslie Alexander
+                        </h3>
+
+                        <p class="team-position">
+                            SEO Executive
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Member 3 -->
+                <div class="col-12 col-md-4">
+
+                    <div class="team-member">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=80"
+                            alt="Savannah Nguyen"
+                            class="team-image"
+                        >
+
+                        <h3 class="team-name">
+                            Savannah Nguyen
+                        </h3>
+
+                        <p class="team-position">
+                            Account Manager
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="faq-section py-5">
+        <div class="site-container">
+
+            <!-- FAQ Heading -->
+            <div class="faq-heading text-center">
+                <h2 class="faq-title">
+                    <span class="faq-highlight">Frequently asked</span>
+                    <br>
+                    question
+                </h2>
+            </div>
+
+            <!-- FAQ List -->
+            <div class="faq-list">
+
+                <!-- FAQ 1 -->
+                <details class="faq-item" open>
+                    <summary>
+                        <span>Q. What is SEO does my business need SEO?</span>
+                        <span class="faq-icon"></span>
+                    </summary>
+
+                    <p>
+                        Search Engine Optimization is the practice of ranking a website. Yes, your business should be investing in SEO. Search engine optimization offers a way to increase traffic without paying for each and every click.
+                    </p>
+                </details>
+
+
+                <!-- FAQ 2 -->
+                <details class="faq-item">
+                    <summary>
+                        <span>Q. What are Google's most important ranking factors?</span>
+                        <span class="faq-icon"></span>
+                    </summary>
+
+                    <p>
+                        a
+                    </p>
+                </details>
+
+
+                <!-- FAQ 3 -->
+                <details class="faq-item">
+                    <summary>
+                        <span>Q. What is the difference between On-Page SEO and technical SEO?</span>
+                        <span class="faq-icon"></span>
+                    </summary>
+
+                    <p>
+                        b
+                    </p>
+                </details>
+
+
+                <!-- FAQ 4 -->
+                <details class="faq-item">
+                    <summary>
+                        <span>Q. Does social media help to increase my website's rank?</span>
+                        <span class="faq-icon"></span>
+                    </summary>
+
+                    <p>
+                        c
+                    </p>
+                </details>
+
+
+                <!-- FAQ 5 -->
+                <details class="faq-item">
+                    <summary>
+                        <span>Q. How do I create SEO-friendly content?</span>
+                        <span class="faq-icon"></span>
+                    </summary>
+
+                    <p>
+                        d
+                    </p>
+                </details>
+
+
+                <!-- FAQ 6 -->
+                <details class="faq-item">
+                    <summary>
+                        <span>Q. Why has my organic traffic dropped?</span>
+                        <span class="faq-icon"></span>
+                    </summary>
+
+                    <p>
+                        e
+                    </p>
+                </details>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="site-container">
+
+            <div class="cta-box text-center">
+
+                <h2 class="cta-title">
+                    Are you interested in<br class="d-none d-md-block">
+                    boosting your SEO ranking?
+                </h2>
+
+                <p class="cta-description">
+                    If you want to evolve your digital performance and learn more about
+                    how our SEO services can help, get in touch with the team today.
+                </p>
+
+                <a href="#get-started" class="btn btn-dark">
+                    Contact With Us
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- 10. Footer -->
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="site-container">
+
+            <div class="row gy-5 footer-main">
+
+                <!-- Brand -->
+                <div class="col-12 col-lg-4">
+
+                    <a href="#" class="footer-logo">
+                        <img src="/images/Logo.svg" alt="Sark">
+                    </a>
+
+                    <p class="footer-description">
+                        There are many variations of passages<br class="d-none d-lg-block">
+                        of Lorem the Ipsum available it&nbsp; majority.
+                    </p>
+
+                    <form class="footer-subscribe">
+                        <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Enter your email"
+                            aria-label="Email address"
+                        >
+
+                        <button type="submit" class="btn footer-subscribe-btn">
+                            Subscribe
+                        </button>
+                    </form>
+
+                </div>
+
+
+                <!-- Services -->
+                <div class="col-6 col-md-4 col-lg-2 offset-lg-1">
+
+                    <h4 class="footer-title">
+                        Services
+                    </h4>
+
+                    <ul class="footer-links">
+                        <li><a href="#">Incident Responder</a></li>
+                        <li><a href="#">Secure Managed IT</a></li>
+                        <li><a href="#">Check website Url</a></li>
+                        <li><a href="#">Locker Security</a></li>
+                    </ul>
+
+                </div>
+
+
+                <!-- About Us -->
+                <div class="col-6 col-md-4 col-lg-2">
+
+                    <h4 class="footer-title">
+                        About Us
+                    </h4>
+
+                    <ul class="footer-links">
+                        <li><a href="#">Payment Plans</a></li>
+                        <li><a href="#">Make saving More</a></li>
+                        <li><a href="#">Tax Calculator</a></li>
+                        <li><a href="#">Talk To Us</a></li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div class="col-12 col-md-4 col-lg-3">
+
+                    <h4 class="footer-title">
+                        Contact Info
+                    </h4>
+
+                    <p class="footer-address">
+                        455 West Orchard Street<br>
+                        Kings Mountain, NC 280867
+                    </p>
+
+                    <a href="tel:+0882466422710" class="footer-contact">
+                        <span class="footer-contact-icon">☎</span>
+                        <span>+088 (246) 642-27-10</span>
+                    </a>
+
+                    <a href="mailto:example@gmail.com" class="footer-contact">
+                        <span class="footer-contact-icon">✉</span>
+                        <span>example@gmail.com</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Bottom line -->
+            <div class="footer-bottom">
+
+                <p class="mb-0">
+                    © 2022 Sharko All Rights Reserved. Designed by Finestdevs
+                </p>
+
+            </div>
+
+        </div>
+    </footer>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+</html>
